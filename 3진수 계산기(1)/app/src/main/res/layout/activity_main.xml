@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lean"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/holo_green_light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@android:color/holo_green_light"
+        tools:ignore="ExtraText">
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:padding="5pt"
+                    android:text="입력:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/inputs"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2pt"
+                    android:padding="7pt" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="2dip"
+            android:layout_margin="10pt"
+            android:background="#FFFF0000"
+            android:padding="10pt" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1pt"
+            android:padding="10pt">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1pt"
+                android:padding="5pt">
+
+                <Button
+                    android:id="@+id/btn_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:padding="8pt"
+                    android:text="0"
+                    tools:layout_editor_absoluteX="48dp"
+                    tools:layout_editor_absoluteY="146dp" />
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:padding="8pt"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:padding="8pt"
+                    android:text="2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:layout_margin="1pt"
+                android:padding="5pt">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:padding="8pt"
+                    android:text="+"
+                    tools:layout_editor_absoluteX="48dp"
+                    tools:layout_editor_absoluteY="146dp" />
+
+                <Button
+                    android:id="@+id/btn_mul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:padding="8pt"
+                    android:text="*" />
+
+                <Button
+                    android:id="@+id/btn_eql"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:padding="8pt"
+                    android:text="=" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:padding="5pt"
+                    android:text="결과:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="78dp" />
+
+                <TextView
+                    android:id="@+id/outputs"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="2dip"
+            android:layout_margin="10pt"
+            android:background="#FFFF0000"
+            android:padding="10pt" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10pt"
+            android:padding="5pt"
+            android:text="C" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
